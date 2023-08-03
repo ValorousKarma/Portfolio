@@ -1,0 +1,66 @@
+/* COLOR PALETTE -----------------------
+$dark-green: rgba(4, 42, 43, 1);
+$gray: rgba(127, 127, 127, 1);
+$silver: rgba(165, 165, 165, 1);
+$silver-2: rgba(204, 204, 204, 1);
+$white-smoke: rgba(242, 242, 242, 1);
+
+--dark-green: #042a2bff;
+--gray: #7f7f7fff;
+--silver: #a5a5a5ff;
+--silver-2: #ccccccff;
+--white-smoke: #f2f2f2ff;
+----------------------------------------*/
+
+.main-nav {
+  padding: 2rem 3rem;
+  display: flex;
+  gap: 8%;
+  justify-content: right;
+}
+
+.main-nav button {
+  padding: 0;
+  border: none;
+  background: none;
+}
+
+.main-nav button span{
+  text-align: center;
+  font-size: 20px;
+  position: relative;
+  top: -4px;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+@media screen and (min-width:1280px){
+  .main-nav {
+    gap: 82px;
+  }
+}
+
+@media screen and (max-width:700px){
+  .main-nav {
+    padding: 2rem 3rem;
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+  }
+  
+  .main-nav button > *:first-child {
+    display: none;
+  }
+  
+  .main-nav button span{
+    text-align: center;
+    font-size: 18px;
+    position: initial;
+    top: initial;
+  }
+}
