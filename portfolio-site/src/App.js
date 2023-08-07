@@ -1,35 +1,34 @@
-import "./styles/App.css";
+import { BrowserRouter } from "react-router-dom";
+import Navbar from "./Components/Navbar";
+import Hero from "./Components/Hero";
+import About from "./Components/About";
+import Projects from "./Components/Projects";
+import Tech from "./Components/Tech";
+import Education from "./Components/Education";
+import Feedbacks from "./Components/Feedbacks";
+import Contact from "./Components/Contact";
+import StarsCanvas from "./Components/StarsCanvas";
 import React from 'react';
-import MaterialIcon, {colorPalette} from 'material-icons-react';
 
-function App() {
+const App = () => {
   return (
-    <div class="wrapper">
-      <Navbar />
-    </div>
-  );
-}
-
-const Navbar = () => {
-  return (
-    <nav class="main-nav">
-      <button>
-        <MaterialIcon icon="code" />
-        <span>Projects</span>
-      </button>
-      <button>
-        <MaterialIcon icon="school" />
-        <span>Education</span>
-      </button>
-      <button>
-        <MaterialIcon icon="work" />
-        <span>Experience</span>
-      </button>
-      <button>
-        <MaterialIcon icon="email" />
-        <span>Contact</span>
-      </button>
-    </nav>
+    <BrowserRouter>
+      <div className="relative z-0 bg-primary">
+        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+          <Navbar />
+          <Hero />
+        </div>
+        <About />
+        <Projects />
+        <Tech />
+        <Education />
+        <Feedbacks />
+        <div className="relative z-0">
+          <Contact />
+          <StarsCanvas />
+        </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
