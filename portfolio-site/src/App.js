@@ -8,13 +8,13 @@ import Education from "./Components/Education";
 import Feedbacks from "./Components/Feedbacks";
 import Contact from "./Components/Contact";
 import StarsCanvas from "./Components/StarsCanvas";
-import React from 'react';
+import React from "react";
 
 const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pattern bg-cover bg-no-repeat bg-center">
+        <div className="bg-cover bg-no-repeat bg-center">
           <Navbar />
           <Hero />
         </div>
@@ -30,6 +30,6 @@ const App = () => {
       </div>
     </BrowserRouter>
   );
-}
+};
 
 export default App;
