@@ -141,9 +141,7 @@ module.exports = {
     },
     caretColor: ({ theme }) => theme("colors"),
     colors: ({ colors }) => ({
-      primary: "#f2f2f2ff",
       secondary: "#ccccccff",
-      tertiary: "#042a2bff",
       "black-100": "#100d25",
       "black-200": "#090325",
       "white-100": "#f3f3f3",
@@ -175,6 +173,9 @@ module.exports = {
       rose: colors.rose,
       gray: "#7f7f7fff",
       silver: "#a5a5a5ff",
+      "light-green": "#0A6D70ff",
+      "dark-green": "#07494Bff",
+      "off-white": "#f2f2f2ff",
     }),
     columns: {
       auto: "auto",

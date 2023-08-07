@@ -5,7 +5,8 @@ $silver: rgba(165, 165, 165, 1);
 $silver-2: rgba(204, 204, 204, 1);
 $white-smoke: rgba(242, 242, 242, 1);
 
---dark-green: #042a2bff;
+--dark-green: #07494Bff;
+--light-green: #0A6D70ff
 --gray: #7f7f7fff;
 --silver: #a5a5a5ff;
 --silver-2: #ccccccff;
