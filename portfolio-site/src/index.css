@@ -15,18 +15,27 @@
   display: block;
 }
 
-.black-gradient {
+.gray-gradient {
   background: rgb(214, 214, 214); /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    rgb(214, 214, 214),
-    rgb(180, 180, 180)
+    rgba(214, 214, 214, 70),
+    rgba(180, 180, 180, 70)
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    rgb(214, 214, 214),
-    rgb(180, 180, 180)
+    rgba(214, 214, 214, 70),
+    rgba(180, 180, 180, 70)
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.light-green-gradient {
+  background: #0A6D70ff;
+  background: linear-gradient(#0A6D70ff 0%, rgba(10, 109, 112, 0) 100%);
+  background: -webkit-linear-gradient(
+    #0A6D70ff 0%,
+    rgba(10, 109, 112, 0) 100%,
+  );
 }
 
 .violet-gradient {

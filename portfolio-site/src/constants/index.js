@@ -17,7 +17,8 @@ import {
   FaLinux,
 } from "react-icons/fa";
 import { BiLogoTailwindCss, BiLogoCPlusPlus } from "react-icons/bi";
-export const navLinks = [
+
+const navLinks = [
   {
     id: "about",
     title: "About",
@@ -133,3 +134,5 @@ const projects = [
     source_code_link: "https://github.com/ValorousKarma/RubberRoom",
   },
 ];
+
+export { navLinks, interests, technologies, experiences, projects };
