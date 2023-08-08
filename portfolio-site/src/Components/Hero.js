@@ -5,7 +5,7 @@ import { styles } from "../styles";
 const Button = (props) => {
   return (
     <a href={props.link} rel="noreferrer" target="_blank">
-      <button className="bg-light-green hover:bg-dark-green text-white font-bold sm:py-2 sm:px-7 py-2 px-2 rounded-md">
+      <button className="bg-light-green hover:bg-dark-green text-off-white md:py-2 md:px-7 py-2 px-2 rounded-md">
         <props.icon size={60} />
       </button>
     </a>
