@@ -49,7 +49,7 @@ const RenderProjects = ({ projects }) => {
               <p className={projectDescription}>
                 {project.description}
               </p>
-              <div className='flex gap-5 mt-4'>
+              <div className='flex gap-5 mt-4 text-dark-gray'>
                 {icons.map((Icon, index) => (
                   <Icon
                     key={index}

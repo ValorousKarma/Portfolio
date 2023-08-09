@@ -1,10 +1,14 @@
-import { calPoly, trojan } from './../Assets';
+import {
+  calPoly,
+  trojan,
+  PortfolioSite,
+} from './../Assets';
 
+import { BiLogoJavascript } from 'react-icons/bi';
 import {
   MdOutlineWeb,
   MdSecurity,
   MdOndemandVideo,
-  MdJavascript,
 } from 'react-icons/md';
 import {
   FaConnectdevelop,
@@ -70,7 +74,7 @@ const technologies = [
   },
   {
     name: 'JavaScript',
-    icon: MdJavascript,
+    icon: BiLogoJavascript,
   },
   {
     name: 'React JS',
@@ -114,16 +118,31 @@ const experiences = [
 
 const work = [
   {
-    name: 'Windows Remote Access Trojan',
+    name: 'Windows RAT',
     description: `Windows remote access trojan executable and linux server. Acts as remote shell and
       is able to spawn keylogger. Created for Cal Poly SWIFT malware demonstration and personal
-      security workshop. Written in C. Keylogger demonstrates competency using Windows API,
-      specifically hooks.`,
+      security workshop. Written in C.`,
     icons: [BiLogoCPlusPlus, FaWindows, FaLinux],
     image: trojan,
     source_code_link:
       'https://github.com/ValorousKarma/RubberRoom',
     id: 1,
+  },
+  {
+    name: 'Portfolio Site',
+    description: `A personal programming portfolio, in the format of a website.
+    Made in JavaScript using the React.js library and Tailwind CSS framework. Demonstrates
+    competence with markup, styling, user-interfaces, and responsive design.`,
+    icons: [
+      FaReact,
+      BiLogoJavascript,
+      BiLogoTailwindCss,
+      FaCss3Alt,
+    ],
+    image: PortfolioSite,
+    source_code_link:
+      'https://github.com/ValorousKarma/Portfolio',
+    id: 2,
   },
 ];
 

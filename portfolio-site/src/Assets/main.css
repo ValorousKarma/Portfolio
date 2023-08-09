@@ -849,6 +849,10 @@ video {
   letter-spacing: 0.05em;
 }
 
+.text-dark-gray {
+  color: #5C5C5Cff;
+}
+
 .text-dark-green {
   color: #07494Bff;
 }
