@@ -8,23 +8,19 @@ import { Tilt } from 'react-tilt';
 const RenderText = () => {
   return (
     <>
-      <h1
-        className={`${styles.sectionHeadText} text-dark-green font-black`}
-      >
-        My Passions
-      </h1>
-      <p
-        className={`${styles.sectionSubText} w-[80%] text-gray tracking-wider mt-4`}
-      >
+      <h2 className={`${styles.sectionHeadText}`}>
+        My Passions.
+      </h2>
+      <p className={`${styles.sectionSubText} w-[80%]`}>
         I've had an interest in programming since a young
         age. Now, as a college student looking to polish my
         skills and expose myself to a variety of languages,
         technologies, and design principles, I've narrowed
         my interests. I aspire to improve my frontend and
         backend development capabilities, and my familiarity
-        with cyber-security principles. I hope my background
-        in media production is noticable in the quality of
-        my first website, this portfolio.
+        with cyber-security principles. This portfolio
+        demonstrates my competency with modern, responsive
+        web design.
       </p>
     </>
   );
@@ -53,23 +49,24 @@ const RenderInterests = ({ interests }) => {
                 opacity: 1,
               }}
               transition={{
+                delay: `${index * 0.25}`,
                 duration: 1,
               }}
               viewport={{
                 once: true,
               }}
-              className={`shadow-lg w-full h-full bg-silver rounded-md 
+              className={`shadow-xl w-full h-full bg-light-green rounded-md 
                 text-off-white grid grid-cols-1 grid-rows-2 justify-items-center`}
             >
               <div className='flex items-center justify-center w-full'>
                 <interest.icon size={'75%'} />
               </div>
-              <h1
+              <h3
                 className={`flex items-center justify-center text-center 
                 px-[15%] font-bold text-[16px] xxs:text-[20px]`}
               >
                 {interest.title}
-              </h1>
+              </h3>
             </motion.div>
           </Tilt>
         );
@@ -84,13 +81,13 @@ const RenderInterests = ({ interests }) => {
 const About = () => {
   return (
     <section
-      className={`grid grid-col-1 grid-row-2 relative w-full max-w-7xl 
-    h-screen min-h-[720px] md:min-h-[900px] lg:max-h-[900px] mx-auto space-y-4`}
+      className={`${styles.paddingX} mx-auto grid grid-col-1 grid-row-2 relative 
+      w-full max-w-7xl h-screen min-h-[720px] md:min-h-[900px] lg:max-h-[900px]`}
     >
-      <div className={`${styles.paddingX}`}>
+      <div>
         <RenderText />
       </div>
-      <div className={`${styles.paddingX} h-4/5 mx-auto`}>
+      <div className={`h-4/5 mx-auto`}>
         <RenderInterests interests={interests} />
       </div>
     </section>

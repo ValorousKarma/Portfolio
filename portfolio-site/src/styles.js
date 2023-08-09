@@ -19,9 +19,9 @@ const styles = {
   padding: 'md:px-16 px-6 md:py-16 py-10',
 
   sectionHeadText:
-    'md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]',
+    'md:text-[60px] sm:text-[50px] text-[40px] font-black text-dark-green',
   sectionSubText:
-    'md:text-[24px] sm:text-[18px] text-[14px] tracking-wider',
+    'md:text-[24px] sm:text-[18px] text-[14px] text-gray mt-4',
 };
 
 export { styles };

@@ -50,7 +50,7 @@ const interests = [
     icon: FaConnectdevelop,
   },
   {
-    title: 'Cyber-Security',
+    title: 'Cyber Security',
     icon: MdSecurity,
   },
   {
@@ -112,30 +112,18 @@ const experiences = [
   },
 ];
 
-const projects = [
+const work = [
   {
     name: 'Windows Remote Access Trojan',
     description: `Windows remote access trojan executable and linux server. Acts as remote shell and
       is able to spawn keylogger. Created for Cal Poly SWIFT malware demonstration and personal
       security workshop. Written in C. Keylogger demonstrates competency using Windows API,
       specifically hooks.`,
-    tags: [
-      {
-        name: 'C',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'Windows',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'Linux',
-        color: 'pink-text-gradient',
-      },
-    ],
+    icons: [BiLogoCPlusPlus, FaWindows, FaLinux],
     image: trojan,
     source_code_link:
       'https://github.com/ValorousKarma/RubberRoom',
+    id: 1,
   },
 ];
 
@@ -144,5 +132,5 @@ export {
   interests,
   technologies,
   experiences,
-  projects,
+  work,
 };
