@@ -1,20 +1,19 @@
-import { BrowserRouter } from "react-router-dom";
-import Navbar from "./Components/Navbar";
-import Hero from "./Components/Hero";
-import About from "./Components/About";
-import Projects from "./Components/Projects";
-import Tech from "./Components/Tech";
-import Education from "./Components/Education";
-import Feedbacks from "./Components/Feedbacks";
-import Contact from "./Components/Contact";
-import StarsCanvas from "./Components/StarsCanvas";
-import React from "react";
+import { BrowserRouter } from 'react-router-dom';
+import Navbar from './Components/Navbar';
+import Hero from './Components/Hero';
+import About from './Components/About';
+import Projects from './Components/Projects';
+import Tech from './Components/Tech';
+import Education from './Components/Education';
+import Contact from './Components/Contact';
+import StarsCanvas from './Components/StarsCanvas';
+import React from 'react';
 
 const App = () => {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-off-white">
-        <div className="bg-off-white bg-bg-cover bg-no-repeat bg-center">
+      <div className='relative z-0 bg-off-white'>
+        <div className='bg-off-white bg-bg-cover bg-no-repeat bg-center'>
           <Navbar />
           <Hero />
         </div>
@@ -22,8 +21,7 @@ const App = () => {
         <Projects />
         <Tech />
         <Education />
-        <Feedbacks />
-        <div className="relative z-0">
+        <div className='relative z-0'>
           <Contact />
           <StarsCanvas />
         </div>
