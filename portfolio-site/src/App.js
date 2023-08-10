@@ -3,7 +3,6 @@ import Navbar from './Components/Navbar';
 import Hero from './Components/Hero';
 import About from './Components/About';
 import Projects from './Components/Projects';
-import Tech from './Components/Tech';
 import Education from './Components/Education';
 import Contact from './Components/Contact';
 import StarsCanvas from './Components/StarsCanvas';
@@ -19,7 +18,6 @@ const App = () => {
         </div>
         <About />
         <Projects />
-        <Tech />
         <Education />
         <div className='relative z-0'>
           <Contact />
