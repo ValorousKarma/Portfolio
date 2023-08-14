@@ -1,7 +1,8 @@
 import {
-  calPoly,
   trojan,
   PortfolioSite,
+  calPoly,
+  penHigh,
 } from './../Assets';
 
 import { BiLogoJavascript } from 'react-icons/bi';
@@ -140,18 +141,42 @@ const education = [
   {
     school:
       'California State Polytechnic University, Pomona',
+    icon: {
+      alt: 'Cal Poly Pomona Icon',
+      source: calPoly,
+      style: 'h-[85%] w-[55%] mx-auto my-[5%]',
+    },
     degree: 'BS Computer Science',
-    grad_date: 'May 2025',
+    grad_date: 'Spring 2021 - Fall 2025',
     activities: [
       {
         name: 'SWIFT',
-        details: ['help'],
+        details: [
+          'SWIntern program 2023-2024 - creating projects & incorporating them in club activities',
+          '2023 CPTC Bootcamp Participant - penetration testing Windows & Linux',
+          '2023 CCDC Bootcamp Participant - cyber defense on Windows & Linux',
+        ],
       },
       {
         name: 'Sigma Phi Epsilon',
-        details: ['me'],
+        details: [
+          '2023 Ruck Leadership Institute - organization leadership skills',
+        ],
       },
     ],
+    _id: 1,
+  },
+  {
+    school: 'Palos Verdes Peninsula High School',
+    icon: {
+      alt: 'Palos Verdes Peninsula High School icon',
+      source: penHigh,
+      style: 'h-[85%] w-[85%] mx-auto my-[5%]',
+    },
+    degree: 'High School',
+    grad_date: 'Spring 2017 - Fall 2021',
+    activities: [],
+    _id: 2,
   },
 ];
 

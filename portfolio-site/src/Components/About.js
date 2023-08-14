@@ -20,10 +20,14 @@ web design.
 const RenderText = () => {
   return (
     <>
-      <h2 className={`${styles.sectionHeadText}`}>
+      <h2
+        className={`${styles.sectionHeadText} text-center my-16`}
+      >
         My Passions.
       </h2>
-      <p className={`${styles.sectionSubText} w-[80%]`}>
+      <p
+        className={`${styles.sectionSubText} w-[80%] mx-auto text-center`}
+      >
         {text}
       </p>
     </>
@@ -86,12 +90,12 @@ const About = () => {
   return (
     <section
       className={`${styles.paddingX} mx-auto grid grid-col-1 grid-row-2 relative 
-      w-full max-w-7xl h-screen min-h-[720px] md:min-h-[900px] lg:max-h-[900px]`}
+      justify-center w-full max-w-7xl`}
     >
       <div>
         <RenderText />
       </div>
-      <div className={`h-4/5 mx-auto`}>
+      <div className={`mx-auto my-16`}>
         <RenderInterests interests={interests} />
       </div>
     </section>

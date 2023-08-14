@@ -8,16 +8,12 @@ import { TbBrandGithubFilled } from 'react-icons/tb';
 const projectHeader = `md:text-[40px] sm:text-[32px] text-[24px] font-bold text-light-green`;
 const projectDescription = `md:text-[20px] sm:text-[16px] text-[12px] text-gray mt-2`;
 
-/*  CALCULATE AND STYLE SECTION HEIGHT
-  - section height can vary based on # of projects */
-const minSectionHeight = 80 + 544 * work.length;
-const minSmSectionHeight = 110 + 434 * work.length;
-const sectionHeight = `min-h-${minSectionHeight} sm:min-h-${minSmSectionHeight}`;
-
 /*  RENDER SECTION HEADER */
 const RenderHeader = () => {
   return (
-    <h2 className={`${styles.sectionHeadText} text-center`}>
+    <h2
+      className={`${styles.sectionHeadText} my-16 text-center`}
+    >
       My Work.
     </h2>
   );
@@ -104,12 +100,12 @@ const RenderProjects = ({ projects }) => {
 
 const Projects = () => {
   return (
-    <div
-      className={`${styles.paddingX} mx-auto relative w-full max-w-7xl ${sectionHeight}`}
+    <section
+      className={`${styles.paddingX} mx-auto relative w-full max-w-7xl`}
     >
       <RenderHeader />
       <RenderProjects projects={work} />
-    </div>
+    </section>
   );
 };
 

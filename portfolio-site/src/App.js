@@ -5,7 +5,6 @@ import About from './Components/About';
 import Projects from './Components/Projects';
 import Education from './Components/Education';
 import Contact from './Components/Contact';
-import StarsCanvas from './Components/StarsCanvas';
 import React from 'react';
 
 const App = () => {
@@ -21,7 +20,6 @@ const App = () => {
         <Education />
         <div className='relative z-0'>
           <Contact />
-          <StarsCanvas />
         </div>
       </div>
     </BrowserRouter>
