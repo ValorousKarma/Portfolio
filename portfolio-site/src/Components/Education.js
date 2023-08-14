@@ -8,7 +8,7 @@ const schoolNameStyles =
 const subheaderStyles =
   'text-dark-gray md:text-[22px] sm:text-[18px] text-[14px] font-medium';
 const activityNameStyles =
-  'text-dark-gray md:text-[20px] sm:text-[16px] text-[12px] ml-4';
+  'text-dark-gray md:text-[20px] sm:text-[16px] text-[12px] ml-4 mt-4';
 const activityDetailStyles =
   'text-gray md:text-[18px] sm:text-[14px] text-[12px] ml-8';
 
@@ -75,7 +75,7 @@ const RenderSchools = ({ schools }) => {
         return (
           <div
             key={school._id}
-            className='relative z-0 w-2/3'
+            className='relative z-0 w-full sm:w-2/3'
           >
             <SchoolIcon school={school} />
             <h3 className={schoolNameStyles}>
