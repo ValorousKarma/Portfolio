@@ -3,6 +3,7 @@ import { interests } from '../constants';
 import { styles } from '../styles.js';
 import { motion } from 'framer-motion';
 import { Tilt } from 'react-tilt';
+import { directionalFade } from '../Animations/motion.js';
 
 const text = `
 I've had an interest in programming since a young
@@ -52,17 +53,14 @@ const RenderInterests = ({ interests }) => {
             className='xl:max-w-xs lg:max-w-xxs list-none lg:h-64 h-48 max-h-[95%]'
           >
             <motion.div
-              initial={{ opacity: 0 }}
-              whileInView={{
-                opacity: 1,
-              }}
-              transition={{
-                delay: `${index * 0.25}`,
-                duration: 1,
-              }}
-              viewport={{
-                once: true,
-              }}
+              variants={directionalFade(
+                'bottom',
+                1,
+                0.25 * index
+              )}
+              initial='hidden'
+              whileInView='show'
+              viewport={{ once: true }}
               className={`shadow-xl w-full h-full bg-light-green rounded-md 
                 text-off-white grid grid-cols-1 grid-rows-2 justify-items-center`}
             >

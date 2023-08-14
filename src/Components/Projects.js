@@ -3,6 +3,7 @@ import { work } from '../constants';
 import { styles } from '../styles.js';
 import { motion } from 'framer-motion';
 import { TbBrandGithubFilled } from 'react-icons/tb';
+import { directionalFade } from '../Animations/motion.js';
 
 /*  STYLING FOR INDIVIDUAL PROJECT HEADERS & DESCRIPTIONS */
 const projectHeader = `md:text-[40px] sm:text-[32px] text-[24px] font-bold text-light-green`;
@@ -54,17 +55,10 @@ const RenderProjects = ({ projects }) => {
         return (
           <motion.div
             key={project.id}
-            initial={{ opacity: 0 }}
-            whileInView={{
-              opacity: 1,
-            }}
-            transition={{
-              delay: 0.25,
-              duration: 1,
-            }}
-            viewport={{
-              once: true,
-            }}
+            variants={directionalFade('right', 1, 0.25)}
+            initial='hidden'
+            whileInView='show'
+            viewport={{ once: true }}
             className={`relative z-0 w-full min-h-[524px] sm:min-h-0 bg-off-white text-gray rounded-md 
             border-2 border-light-green shadow-xl my-5 p-5 no-flex sm:flex 
             gap-5`}

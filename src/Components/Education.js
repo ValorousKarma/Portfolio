@@ -1,7 +1,9 @@
 import React from 'react';
 import { education } from '../constants';
 import { styles } from '../styles.js';
+import { motion } from 'framer-motion';
 import { Tilt } from 'react-tilt';
+import { directionalFade } from '../Animations/motion.js';
 
 const schoolNameStyles =
   'text-light-green md:text-[28px] sm:text-[22px] text-[18px] font-bold';
@@ -105,10 +107,16 @@ const Education = () => {
       id='education'
     >
       <RenderHeader />
-      <div className='flex flex-row mb-16'>
+      <motion.div
+        className='flex flex-row mb-16'
+        variants={directionalFade(null, 1, 0.25)}
+        initial='hidden'
+        whileInView='show'
+        viewport={{ once: true }}
+      >
         <div className='z-0 w-2 bg-light-green mr-16 rounded-md' />
         <RenderSchools schools={education} />
-      </div>
+      </motion.div>
     </section>
   );
 };
