@@ -41,6 +41,7 @@ const Contact = () => {
   return (
     <section
       className={`${styles.paddingX} bg-silver py-16`}
+      id='contact'
     >
       <div
         className={`mx-auto w-full max-w-xl bg-off-white 

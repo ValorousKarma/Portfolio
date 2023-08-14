@@ -17,7 +17,7 @@ const RenderHeader = () => {
   return (
     <>
       <h2
-        className={`${styles.sectionHeadText} text-center my-16`}
+        className={`${styles.sectionHeadText} text-center py-16`}
       >
         My Education.
       </h2>
@@ -102,6 +102,7 @@ const Education = () => {
   return (
     <section
       className={`${styles.paddingX} mx-auto relative w-full max-w-7xl`}
+      id='education'
     >
       <RenderHeader />
       <div className='flex flex-row mb-16'>

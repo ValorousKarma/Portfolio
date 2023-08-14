@@ -12,7 +12,7 @@ const projectDescription = `md:text-[20px] sm:text-[16px] text-[12px] text-gray 
 const RenderHeader = () => {
   return (
     <h2
-      className={`${styles.sectionHeadText} my-16 text-center`}
+      className={`${styles.sectionHeadText} py-16 text-center`}
     >
       My Work.
     </h2>
@@ -102,6 +102,7 @@ const Projects = () => {
   return (
     <section
       className={`${styles.paddingX} mx-auto relative w-full max-w-7xl`}
+      id='projects'
     >
       <RenderHeader />
       <RenderProjects projects={work} />

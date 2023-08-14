@@ -91,6 +91,7 @@ const About = () => {
     <section
       className={`${styles.paddingX} mx-auto grid grid-col-1 grid-row-2 relative 
       justify-center w-full max-w-7xl`}
+      id='about'
     >
       <div>
         <RenderText />
