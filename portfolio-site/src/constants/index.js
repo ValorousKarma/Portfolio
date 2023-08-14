@@ -106,16 +106,6 @@ const technologies = [
   },
 ];
 
-const experiences = [
-  {
-    title: 'Student Video Producer',
-    company_name: 'MediaVision',
-    icon: calPoly,
-    date: 'February 2023 - Current',
-    points: ['Point 1', 'Point 2', 'Point 3', 'Point 4'],
-  },
-];
-
 const work = [
   {
     name: 'Windows RAT',
@@ -146,10 +136,29 @@ const work = [
   },
 ];
 
+const education = [
+  {
+    school:
+      'California State Polytechnic University, Pomona',
+    degree: 'BS Computer Science',
+    grad_date: 'May 2025',
+    activities: [
+      {
+        name: 'SWIFT',
+        details: ['help'],
+      },
+      {
+        name: 'Sigma Phi Epsilon',
+        details: ['me'],
+      },
+    ],
+  },
+];
+
 export {
   navLinks,
   interests,
   technologies,
-  experiences,
   work,
+  education,
 };

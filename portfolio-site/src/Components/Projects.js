@@ -23,6 +23,29 @@ const RenderHeader = () => {
   );
 };
 
+/* MAKE PROJECT REPO LINK BUTTON */
+const RepoButton = ({ project }) => {
+  return (
+    <div
+      className={`z-1 absolute w-[48px] h-[48px] rounded-full
+      left-7 top-7 text-off-white bg-light-green hover:bg-dark-green cursor-pointer
+      shadow-lg`}
+      onClick={() => {
+        window.open(
+          project.source_code_link,
+          '_blank',
+          'noreferrer'
+        );
+      }}
+    >
+      <TbBrandGithubFilled
+        size={'40'}
+        className='mx-auto pt-2'
+      />
+    </div>
+  );
+};
+
 /*  RENDER PROJECT CARDS
   - This function is messy and definitely not single-purpose,
     I will be refactoring it eventually */
@@ -71,24 +94,7 @@ const RenderProjects = ({ projects }) => {
                 ))}
               </div>
             </div>
-
-            <div
-              className={`z-1 absolute w-[48px] h-[48px] rounded-full
-              left-7 top-7 text-off-white bg-light-green hover:bg-dark-green cursor-pointer
-              shadow-lg`}
-              onClick={() => {
-                window.open(
-                  project.source_code_link,
-                  '_blank',
-                  'noreferrer'
-                );
-              }}
-            >
-              <TbBrandGithubFilled
-                size={'40'}
-                className='mx-auto pt-2'
-              />
-            </div>
+            <RepoButton project={project} />
           </motion.div>
         );
       })}
