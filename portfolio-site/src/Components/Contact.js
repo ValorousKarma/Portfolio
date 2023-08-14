@@ -1,5 +1,6 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import { styles } from '../styles.js';
+import emailForm from '../constants/email.js';
 
 import emailjs from '@emailjs/browser';
 
@@ -17,16 +18,26 @@ const RenderHeader = () => {
   - https://www.emailjs.com/ */
 const Contact = () => {
   const form = useRef();
+  const [sent, toggleSent] = useState(false);
+  const [formValues, setFormValues] = useState({
+    name: '',
+    email: '',
+    message: '',
+  });
 
+  /*  SEND EMAIL FUNCTIOn
+    - handles sending email w/ emailjs template
+    - updates "sent" and "formValues" states */
   const sendEmail = (e) => {
     e.preventDefault();
 
+    // send email
     emailjs
       .sendForm(
-        'YOUR_SERVICE_ID',
-        'YOUR_TEMPLATE_ID',
+        emailForm.SERVICE_ID,
+        emailForm.TEMPLATE_ID,
         form.current,
-        'YOUR_PUBLIC_KEY'
+        emailForm.PUBLIC_KEY
       )
       .then(
         (result) => {
@@ -36,8 +47,20 @@ const Contact = () => {
           console.log(error.text);
         }
       );
+
+    // resset all form input to empty after email is sent
+    setFormValues({
+      name: '',
+      email: '',
+      message: '',
+    });
+
+    // display "email sent" message
+    toggleSent(true);
   };
 
+  /*  CONTACT FORM JSX
+    - RENDER FUNCTIONAL CONTACT FORM */
   return (
     <section
       className={`${styles.paddingX} bg-silver py-16`}
@@ -60,6 +83,13 @@ const Contact = () => {
             className='p-1 rounded-md'
             type='text'
             name='user_name'
+            value={formValues.name}
+            onChange={(e) =>
+              setFormValues({
+                ...formValues,
+                name: e.target.value,
+              })
+            }
           />
           <label className='text-gray font-medium'>
             Email
@@ -68,6 +98,13 @@ const Contact = () => {
             className='p-1 rounded-md'
             type='email'
             name='user_email'
+            value={formValues.email}
+            onChange={(e) =>
+              setFormValues({
+                ...formValues,
+                email: e.target.value,
+              })
+            }
           />
           <label className='text-gray font-medium'>
             Message
@@ -75,6 +112,13 @@ const Contact = () => {
           <textarea
             className='h-64 p-1 rounded-md'
             name='message'
+            value={formValues.message}
+            onChange={(e) =>
+              setFormValues({
+                ...formValues,
+                message: e.target.value,
+              })
+            }
           />
           <input
             type='submit'
@@ -83,6 +127,12 @@ const Contact = () => {
             text-off-white font-medium w-16 rounded-md`}
           />
         </form>
+        <p
+          className={`${sent ? '' : 'hidden'}
+        text-light-green font-medium`}
+        >
+          Email Sent!
+        </p>
       </div>
     </section>
   );

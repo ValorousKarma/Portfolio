@@ -12,6 +12,8 @@ node_modules
 ./build
 
 # misc
+./src/constants/email.js
+
 .DS_Store
 .env.local
 .env.development.local

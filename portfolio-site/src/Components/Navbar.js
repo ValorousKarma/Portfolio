@@ -48,9 +48,6 @@ const Navbar = () => {
                 document
                   .getElementById(link.id)
                   .scrollIntoView(true);
-                document
-                  .getElementById(link.id)
-                  .scrollBy(0, 200);
                 setActive(link.title);
               }}
             >
@@ -85,9 +82,6 @@ const Navbar = () => {
                     document
                       .getElementById(link.id)
                       .scrollIntoView(true);
-                    document
-                      .getElementById(link.id)
-                      .scrollBy(0, 200);
                     setActive(link.title);
                     setToggle(!toggle);
                   }}
