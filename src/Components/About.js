@@ -55,12 +55,11 @@ const RenderInterests = ({ interests }) => {
             <motion.div
               variants={directionalFade(
                 'bottom',
-                1,
+                0.75,
                 0.25 * index
               )}
               initial='hidden'
               whileInView='show'
-              viewport={{ once: true }}
               className={`shadow-xl w-full h-full bg-light-green rounded-md 
                 text-off-white grid grid-cols-1 grid-rows-2 justify-items-center`}
             >

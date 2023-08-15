@@ -171,7 +171,7 @@ const education = [
     icon: {
       alt: 'Palos Verdes Peninsula High School icon',
       source: penHigh,
-      style: 'h-[85%] w-[85%] mx-auto my-[5%]',
+      style: 'h-[80%] w-[80%] mx-auto my-[5%]',
     },
     degree: 'High School',
     grad_date: 'Spring 2017 - Fall 2021',

@@ -55,10 +55,9 @@ const RenderProjects = ({ projects }) => {
         return (
           <motion.div
             key={project.id}
-            variants={directionalFade('right', 1, 0.25)}
+            variants={directionalFade('bottom', 0.5, 0.25)}
             initial='hidden'
             whileInView='show'
-            viewport={{ once: true }}
             className={`relative z-0 w-full min-h-[524px] sm:min-h-0 bg-off-white text-gray rounded-md 
             border-2 border-light-green shadow-xl my-5 p-5 no-flex sm:flex 
             gap-5`}

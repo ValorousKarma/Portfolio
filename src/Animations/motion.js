@@ -2,12 +2,6 @@ export const directionalFade = (direction, time, delay) => {
   return {
     hidden: {
       opacity: 0,
-      x:
-        direction === 'left'
-          ? -100
-          : direction === 'right'
-          ? 100
-          : 0,
       y:
         direction === 'top'
           ? -100
