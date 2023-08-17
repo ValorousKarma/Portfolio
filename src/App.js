@@ -10,8 +10,8 @@ import React from 'react';
 const App = () => {
   return (
     <BrowserRouter>
-      <div className='relative z-0 bg-off-white'>
-        <div className='bg-off-white bg-bg-cover bg-no-repeat bg-center'>
+      <div className='relative -z-1 bg-off-white'>
+        <div>
           <Navbar />
           <Hero />
         </div>

@@ -1,8 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    './src/**/*.{js,ts,jsx,tsx}',
-  ],
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
   mode: 'jit',
   presets: [],
   darkMode: 'media', // or 'class'
@@ -35,31 +33,21 @@ module.exports = {
       square: '1 / 1',
       video: '16 / 9',
     },
-    backdropBlur: ({ theme }) =>
-      theme('blur'),
-    backdropBrightness: ({ theme }) =>
-      theme('brightness'),
-    backdropContrast: ({ theme }) =>
-      theme('contrast'),
-    backdropGrayscale: ({ theme }) =>
-      theme('grayscale'),
-    backdropHueRotate: ({ theme }) =>
-      theme('hueRotate'),
-    backdropInvert: ({ theme }) =>
-      theme('invert'),
-    backdropOpacity: ({ theme }) =>
-      theme('opacity'),
-    backdropSaturate: ({ theme }) =>
-      theme('saturate'),
-    backdropSepia: ({ theme }) =>
-      theme('sepia'),
+    backdropBlur: ({ theme }) => theme('blur'),
+    backdropBrightness: ({ theme }) => theme('brightness'),
+    backdropContrast: ({ theme }) => theme('contrast'),
+    backdropGrayscale: ({ theme }) => theme('grayscale'),
+    backdropHueRotate: ({ theme }) => theme('hueRotate'),
+    backdropInvert: ({ theme }) => theme('invert'),
+    backdropOpacity: ({ theme }) => theme('opacity'),
+    backdropSaturate: ({ theme }) => theme('saturate'),
+    backdropSepia: ({ theme }) => theme('sepia'),
     backgroundColor: (theme) => ({
       ...theme('colors'),
     }),
     backgroundImage: {
       'none': 'none',
-      'hero-pattern':
-        "url('/src/Assets/herobg.png')",
+      'hero-pattern': "url('/src/Assets/herobg.png')",
       'gradient-to-t':
         'linear-gradient(to top, var(--tw-gradient-stops))',
       'gradient-to-tr':
@@ -77,8 +65,7 @@ module.exports = {
       'gradient-to-tl':
         'linear-gradient(to top left, var(--tw-gradient-stops))',
     },
-    backgroundOpacity: ({ theme }) =>
-      theme('opacity'),
+    backgroundOpacity: ({ theme }) => theme('opacity'),
     backgroundPosition: {
       'bottom': 'bottom',
       'center': 'center',
@@ -108,13 +95,9 @@ module.exports = {
     },
     borderColor: ({ theme }) => ({
       ...theme('colors'),
-      DEFAULT: theme(
-        'colors.gray.200',
-        'currentColor'
-      ),
+      DEFAULT: theme('colors.gray.200', 'currentColor'),
     }),
-    borderOpacity: ({ theme }) =>
-      theme('opacity'),
+    borderOpacity: ({ theme }) => theme('opacity'),
     borderRadius: {
       'none': '0px',
       'sm': '0.125rem',
@@ -143,16 +126,12 @@ module.exports = {
       'md': '0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1)',
       'lg': '0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1)',
       'xl': '0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)',
-      '2xl':
-        '0 25px 50px -12px rgb(0 0 0 / 0.25)',
-      'inner':
-        'inset 0 2px 4px 0 rgb(0 0 0 / 0.05)',
+      '2xl': '0 25px 50px -12px rgb(0 0 0 / 0.25)',
+      'inner': 'inset 0 2px 4px 0 rgb(0 0 0 / 0.05)',
       'none': 'none',
-      'card':
-        '0px 35px 120px -15px #211e35',
+      'card': '0px 35px 120px -15px #211e35',
     },
-    boxShadowColor: ({ theme }) =>
-      theme('colors'),
+    boxShadowColor: ({ theme }) => theme('colors'),
     brightness: {
       0: '0',
       50: '.5',
@@ -166,8 +145,7 @@ module.exports = {
       150: '1.5',
       200: '2',
     },
-    caretColor: ({ theme }) =>
-      theme('colors'),
+    caretColor: ({ theme }) => theme('colors'),
     colors: ({ colors }) => ({
       'secondary': '#ccccccff',
       'black-100': '#100d25',
@@ -285,12 +263,9 @@ module.exports = {
       'zoom-in': 'zoom-in',
       'zoom-out': 'zoom-out',
     },
-    divideColor: ({ theme }) =>
-      theme('borderColor'),
-    divideOpacity: ({ theme }) =>
-      theme('borderOpacity'),
-    divideWidth: ({ theme }) =>
-      theme('borderWidth'),
+    divideColor: ({ theme }) => theme('borderColor'),
+    divideOpacity: ({ theme }) => theme('borderOpacity'),
+    divideWidth: ({ theme }) => theme('borderWidth'),
     dropShadow: {
       'sm': '0 1px 1px rgb(0 0 0 / 0.05)',
       'DEFAULT': [
@@ -309,8 +284,11 @@ module.exports = {
         '0 20px 13px rgb(0 0 0 / 0.03)',
         '0 8px 5px rgb(0 0 0 / 0.08)',
       ],
-      '2xl':
-        '0 25px 25px rgb(0 0 0 / 0.15)',
+      'xl-white': [
+        '0 20px 13px rgb(242 242 242 / 0.03)',
+        '0 8px 5px rgb(242 242 242 / 0.08)',
+      ],
+      '2xl': '0 25px 25px rgb(0 0 0 / 0.15)',
       'none': '0 0 #0000',
     },
     fill: ({ theme }) => ({
@@ -399,58 +377,19 @@ module.exports = {
       ],
     },
     fontSize: {
-      'xs': [
-        '0.75rem',
-        { lineHeight: '1rem' },
-      ],
-      'sm': [
-        '0.875rem',
-        { lineHeight: '1.25rem' },
-      ],
-      'base': [
-        '1rem',
-        { lineHeight: '1.5rem' },
-      ],
-      'lg': [
-        '1.125rem',
-        { lineHeight: '1.75rem' },
-      ],
-      'xl': [
-        '1.25rem',
-        { lineHeight: '1.75rem' },
-      ],
-      '2xl': [
-        '1.5rem',
-        { lineHeight: '2rem' },
-      ],
-      '3xl': [
-        '1.875rem',
-        { lineHeight: '2.25rem' },
-      ],
-      '4xl': [
-        '2.25rem',
-        { lineHeight: '2.5rem' },
-      ],
-      '5xl': [
-        '3rem',
-        { lineHeight: '1' },
-      ],
-      '6xl': [
-        '3.75rem',
-        { lineHeight: '1' },
-      ],
-      '7xl': [
-        '4.5rem',
-        { lineHeight: '1' },
-      ],
-      '8xl': [
-        '6rem',
-        { lineHeight: '1' },
-      ],
-      '9xl': [
-        '8rem',
-        { lineHeight: '1' },
-      ],
+      'xs': ['0.75rem', { lineHeight: '1rem' }],
+      'sm': ['0.875rem', { lineHeight: '1.25rem' }],
+      'base': ['1rem', { lineHeight: '1.5rem' }],
+      'lg': ['1.125rem', { lineHeight: '1.75rem' }],
+      'xl': ['1.25rem', { lineHeight: '1.75rem' }],
+      '2xl': ['1.5rem', { lineHeight: '2rem' }],
+      '3xl': ['1.875rem', { lineHeight: '2.25rem' }],
+      '4xl': ['2.25rem', { lineHeight: '2.5rem' }],
+      '5xl': ['3rem', { lineHeight: '1' }],
+      '6xl': ['3.75rem', { lineHeight: '1' }],
+      '7xl': ['4.5rem', { lineHeight: '1' }],
+      '8xl': ['6rem', { lineHeight: '1' }],
+      '9xl': ['8rem', { lineHeight: '1' }],
     },
     fontWeight: {
       thin: '100',
@@ -463,10 +402,8 @@ module.exports = {
       extrabold: '800',
       black: '900',
     },
-    gap: ({ theme }) =>
-      theme('spacing'),
-    gradientColorStops: ({ theme }) =>
-      theme('colors'),
+    gap: ({ theme }) => theme('spacing'),
+    gradientColorStops: ({ theme }) => theme('colors'),
     gradientColorStopPositions: {
       '0%': '0%',
       '5%': '5%',
@@ -738,10 +675,7 @@ module.exports = {
       max: 'max-content',
       fit: 'fit-content',
     }),
-    maxWidth: ({
-      theme,
-      breakpoints,
-    }) => ({
+    maxWidth: ({ theme, breakpoints }) => ({
       'none': 'none',
       '0': '0rem',
       'xxs': '16rem',
@@ -823,8 +757,7 @@ module.exports = {
       11: '11',
       12: '12',
     },
-    outlineColor: ({ theme }) =>
-      theme('colors'),
+    outlineColor: ({ theme }) => theme('colors'),
     outlineOffset: {
       0: '0px',
       1: '1px',
@@ -839,21 +772,14 @@ module.exports = {
       4: '4px',
       8: '8px',
     },
-    padding: ({ theme }) =>
-      theme('spacing'),
-    placeholderColor: ({ theme }) =>
-      theme('colors'),
-    placeholderOpacity: ({ theme }) =>
-      theme('opacity'),
+    padding: ({ theme }) => theme('spacing'),
+    placeholderColor: ({ theme }) => theme('colors'),
+    placeholderOpacity: ({ theme }) => theme('opacity'),
     ringColor: ({ theme }) => ({
-      DEFAULT: theme(
-        'colors.blue.500',
-        '#3b82f6'
-      ),
+      DEFAULT: theme('colors.blue.500', '#3b82f6'),
       ...theme('colors'),
     }),
-    ringOffsetColor: ({ theme }) =>
-      theme('colors'),
+    ringOffsetColor: ({ theme }) => theme('colors'),
     ringOffsetWidth: {
       0: '0px',
       1: '1px',
@@ -915,8 +841,7 @@ module.exports = {
     scrollMargin: ({ theme }) => ({
       ...theme('spacing'),
     }),
-    scrollPadding: ({ theme }) =>
-      theme('spacing'),
+    scrollPadding: ({ theme }) => theme('spacing'),
     sepia: {
       0: '0',
       DEFAULT: '100%',
@@ -980,10 +905,8 @@ module.exports = {
     },
     supports: {},
     data: {},
-    textColor: ({ theme }) =>
-      theme('colors'),
-    textDecorationColor: ({ theme }) =>
-      theme('colors'),
+    textColor: ({ theme }) => theme('colors'),
+    textDecorationColor: ({ theme }) => theme('colors'),
     textDecorationThickness: {
       'auto': 'auto',
       'from-font': 'from-font',
@@ -996,8 +919,7 @@ module.exports = {
     textIndent: ({ theme }) => ({
       ...theme('spacing'),
     }),
-    textOpacity: ({ theme }) =>
-      theme('opacity'),
+    textOpacity: ({ theme }) => theme('opacity'),
     textUnderlineOffset: {
       auto: 'auto',
       0: '0px',
@@ -1052,14 +974,11 @@ module.exports = {
       transform: 'transform',
     },
     transitionTimingFunction: {
-      'DEFAULT':
-        'cubic-bezier(0.4, 0, 0.2, 1)',
+      'DEFAULT': 'cubic-bezier(0.4, 0, 0.2, 1)',
       'linear': 'linear',
       'in': 'cubic-bezier(0.4, 0, 1, 1)',
-      'out':
-        'cubic-bezier(0, 0, 0.2, 1)',
-      'in-out':
-        'cubic-bezier(0.4, 0, 0.2, 1)',
+      'out': 'cubic-bezier(0, 0, 0.2, 1)',
+      'in-out': 'cubic-bezier(0.4, 0, 0.2, 1)',
     },
     translate: ({ theme }) => ({
       ...theme('spacing'),
