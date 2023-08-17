@@ -1,7 +1,7 @@
 /*  slightly modified code from React Three Fiber Pmndrs.doc example "Object clump
   - Paul Henschel/drcmda 
   - https://codesandbox.io/s/ssbdsw?file=/public/index.html*/
-
+import { Suspense } from 'react';
 import * as THREE from 'three';
 import {
   Canvas,
@@ -50,8 +50,10 @@ export const HeroCanvas = ({ icon }) => (
       gravity={[0, 2, 0]}
       iterations={10}
     >
-      <Pointer />
-      <Clump />
+      <Suspense>
+        <Pointer />
+        <Clump />
+      </Suspense>
     </Physics>
     <EffectComposer
       disableNormalPass
