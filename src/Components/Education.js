@@ -111,7 +111,7 @@ function PaperPencil(props) {
   });
 
   const { nodes, materials } = useGLTF(
-    '/pencilPaper.glb',
+    'pencilPaper.glb',
     true
   );
 
