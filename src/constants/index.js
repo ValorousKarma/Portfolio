@@ -147,7 +147,7 @@ const education = [
       style: 'h-[85%] w-[55%] mx-auto my-[5%]',
     },
     degree: 'BS Computer Science',
-    grad_date: 'Spring 2021 - Fall 2025',
+    grad_date: 'Fall 2021 - Spring 2025',
     activities: [
       {
         name: 'SWIFT',
@@ -174,7 +174,7 @@ const education = [
       style: 'h-[80%] w-[80%] mx-auto my-[5%]',
     },
     degree: 'High School',
-    grad_date: 'Spring 2017 - Fall 2021',
+    grad_date: 'Fall 2017 - Spring 2021',
     activities: [],
     _id: 2,
   },
