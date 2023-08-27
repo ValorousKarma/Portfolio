@@ -5,6 +5,7 @@ import { styles } from '../styles.js';
 import { motion } from 'framer-motion';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { useGLTF } from '@react-three/drei';
+import { pencilPaper } from '../Assets';
 
 import { Tilt } from 'react-tilt';
 import { directionalFade } from '../Animations/motion.js';
@@ -111,7 +112,7 @@ function PaperPencil(props) {
   });
 
   const { nodes, materials } = useGLTF(
-    './pencilPaper.glb',
+    pencilPaper,
     true
   );
 
