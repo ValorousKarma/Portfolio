@@ -1,16 +1,13 @@
 import {
   trojan,
+  vehicles,
   PortfolioSite,
   calPoly,
   penHigh,
 } from './../Assets';
 
 import { BiLogoJavascript } from 'react-icons/bi';
-import {
-  MdOutlineWeb,
-  MdSecurity,
-  MdOndemandVideo,
-} from 'react-icons/md';
+import { MdOutlineWeb, MdSecurity } from 'react-icons/md';
 import {
   FaConnectdevelop,
   FaHtml5,
@@ -25,6 +22,8 @@ import {
   BiLogoTailwindCss,
   BiLogoCPlusPlus,
 } from 'react-icons/bi';
+import { SiUnrealengine, SiC } from 'react-icons/si';
+import { GiArtificialIntelligence } from 'react-icons/gi';
 
 const navLinks = [
   {
@@ -47,11 +46,11 @@ const navLinks = [
 
 const interests = [
   {
-    title: 'Frontend Development',
+    title: 'Web Development',
     icon: MdOutlineWeb,
   },
   {
-    title: 'Backend Development',
+    title: 'Software Development',
     icon: FaConnectdevelop,
   },
   {
@@ -59,8 +58,8 @@ const interests = [
     icon: MdSecurity,
   },
   {
-    title: 'Content Creation',
-    icon: MdOndemandVideo,
+    title: 'Artifical Intelligence',
+    icon: GiArtificialIntelligence,
   },
 ];
 
@@ -109,11 +108,22 @@ const technologies = [
 
 const work = [
   {
+    name: 'Vehicle AI in Unreal Engine',
+    description: `A basic reflexive agent that uses two sensors to detect its orientation
+    relative to its desired path, and steers based on that. Created for my introductory
+    Artificial Intelligence course. Made in Unreal Engine with C++.`,
+    icons: [BiLogoCPlusPlus, SiUnrealengine],
+    image: vehicles,
+    source_code_link:
+      'https://github.com/ValorousKarma/AITaxiDriver',
+    id: 3,
+  },
+  {
     name: 'Windows RAT',
     description: `Windows remote access trojan executable and linux server. Acts as remote shell and
       is able to spawn keylogger. Created for Cal Poly SWIFT malware demonstration and personal
       security workshop. Written in C.`,
-    icons: [BiLogoCPlusPlus, FaWindows, FaLinux],
+    icons: [SiC, FaWindows, FaLinux],
     image: trojan,
     source_code_link:
       'https://github.com/ValorousKarma/RubberRoom',
@@ -153,14 +163,16 @@ const education = [
         name: 'SWIFT',
         details: [
           'SWIntern program 2023-2024 - creating projects & incorporating them in club activities',
-          '2023 CPTC Bootcamp Participant - penetration testing Windows & Linux',
-          '2023 CCDC Bootcamp Participant - cyber defense on Windows & Linux',
+          'Proposed and led personal security workshop for club members',
+          '2023-2024 Collegiate Cyber Defense Team',
         ],
       },
       {
-        name: 'Sigma Phi Epsilon',
+        name: 'SigEp',
         details: [
-          '2023 Ruck Leadership Institute - organization leadership skills',
+          'Selected as one of 160 participants out of 530 applicants to attend the 2023 Ruck Leadership Institute',
+          'Boosted alumni outreach - updated newsletter website and led effort to maintain it via. WordPress trainings',
+          'Proposed and successfully passed organization bylaw changes after being unanimously elected to the Standards Board',
         ],
       },
     ],

@@ -7,14 +7,12 @@ import { directionalFade } from '../Animations/motion.js';
 
 const text = `
 I've had an interest in programming since a young
-age. Now, as a college student looking to polish my
+age. Now, as a college student I'm looking to polish my
 skills and expose myself to a variety of languages,
-technologies, and design principles, I've narrowed
-my interests. I aspire to improve my frontend and
-backend development capabilities, and my familiarity
-with cyber-security principles. This portfolio
-demonstrates my competency with modern, responsive
-web design.
+technologies, and design principles. I aspire to gain 
+experience in web, software, and AI, and enhance my 
+cybersecurity knowledge. This portfolio demonstrates my
+competency with responsive web design.
 `;
 
 /*  RENDER INFORMATIONAL TEXT */

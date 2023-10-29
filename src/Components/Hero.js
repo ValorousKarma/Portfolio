@@ -40,8 +40,8 @@ const Hero = () => {
           </h1>
           <p className='z-10 text-gray text-[16px] sm:text-[20px] md:text-[24px] drop-shadow-xl-white tracking-wider'>
             I am a 3rd year Computer Science student
-            interested in fullstack web, cloud, and
-            security.
+            interested in web development, game design, AI,
+            and cyber security.
           </p>
         </div>
       </div>
