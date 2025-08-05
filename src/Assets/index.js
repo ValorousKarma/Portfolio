@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import calPoly from "./vertical-stacked-bw.png";
+import proclone from "./projects/Proclone.png";
 import alienJob from "./projects/AlienJob.png";
 import sleepObf from "./projects/SleepResearch.png";
 import trojan from "./projects/RAT.png";
@@ -15,6 +16,7 @@ export {
 	menu,
 	close,
 	calPoly,
+	proclone,
 	alienJob,
 	sleepObf,
 	trojan,

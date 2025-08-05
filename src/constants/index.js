@@ -1,4 +1,5 @@
 import {
+	proclone,
 	alienJob,
 	sleepObf,
 	trojan,
@@ -9,6 +10,7 @@ import {
 } from "./../Assets";
 
 import { BiLogoJavascript } from "react-icons/bi";
+import { DiRedis } from "react-icons/di";
 import { MdOutlineWeb, MdSecurity } from "react-icons/md";
 import {
 	FaConnectdevelop,
@@ -22,14 +24,19 @@ import {
 	FaGitlab,
 	FaGit,
 } from "react-icons/fa";
+import { FaGolang } from "react-icons/fa6";
 import { BiLogoTailwindCss, BiLogoCPlusPlus } from "react-icons/bi";
 import {
 	SiUnrealengine,
 	SiC,
 	SiMicrosoftazure,
 	SiGodotengine,
+	SiTypescript,
+	SiKubernetes,
+	SiIstio,
 } from "react-icons/si";
 import { GiArtificialIntelligence } from "react-icons/gi";
+import { IoLogoGameControllerB } from "react-icons/io";
 
 const navLinks = [
 	{
@@ -64,8 +71,8 @@ const interests = [
 		icon: MdSecurity,
 	},
 	{
-		title: "Artifical Intelligence",
-		icon: GiArtificialIntelligence,
+		title: "Game Development",
+		icon: IoLogoGameControllerB,
 	},
 ];
 
@@ -114,11 +121,29 @@ const technologies = [
 
 const work = [
 	{
-		name: "AlienJob - Shoot-em-up Game",
+		name: "Proclone",
+		description: `An infrastructure automation tool to handle the deployment and management of Proxmox 
+		virtual machine environments, their local virtual networking, and access permissions for users. Its 
+		primary use case is the Cal Poly Pomona Student Data Center, where multiple clubs and teams use 
+		it to reduce the time required to set up workshop and competition environments for participants.`,
+		icons: [
+			FaGolang,
+			SiTypescript,
+			SiKubernetes,
+			FaReact,
+			DiRedis,
+			SiIstio,
+		],
+		image: proclone,
+		source_code_link: "https://github.com/cpp-cyber/proclone",
+		id: 6,
+	},
+	{
+		name: "2D Shoot-em-up Game",
 		description: `A shoot-em-up, 16-bit style game made using the Godot game engine. It was created by
     myself and a team of 7 friends over the span of a month as an introductory project to game development.
     Gitlab issues and merge requests were used for planning features and version control.`,
-		icons: [SiGodotengine, FaGitlab],
+		icons: [SiGodotengine, FaGitlab, FaGit],
 		image: alienJob,
 		source_code_link: "https://ssmirk.itch.io/alienjob",
 		id: 5,
