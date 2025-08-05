@@ -32,8 +32,8 @@ const Hero = () => {
 						</span>
 					</h1>
 					<p className="z-10 text-gray text-[16px] sm:text-[20px] md:text-[24px] drop-shadow-xl-white tracking-wider">
-						I am a recenbt Computer Science graduate passionate
-						about cybersecurity, web development, and software
+						I am a recent Computer Science graduate passionate about
+						cybersecurity, web development, and software
 						development.
 					</p>
 				</div>
